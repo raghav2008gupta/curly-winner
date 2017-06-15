@@ -134,11 +134,9 @@ public class PriorityQueue implements PriorityQueueInterface {
 		LinkedList<Long> temp2 = new LinkedList<Long>();
 		if (queue[3] != null) {
 			temp1.addAll(queue[3].keySet());
-			Collections.sort(temp1, Collections.reverseOrder());
 		}
 		if (h != null) {
 			temp2.addAll(sortByRank(h).keySet());
-			Collections.sort(temp2, Collections.reverseOrder());
 		}
 		if (temp1 != null)
 			idList.addAll(temp1);
@@ -159,7 +157,7 @@ public class PriorityQueue implements PriorityQueueInterface {
 		List list = new LinkedList(map.entrySet());
 		Collections.sort(list, new Comparator() {
 			public int compare(Object o1, Object o2) {
-				return ((Comparable) ((Map.Entry) (o1)).getValue()).compareTo(((Map.Entry) (o2)).getValue());
+				return ((Comparable) ((Map.Entry) (o2)).getValue()).compareTo(((Map.Entry) (o1)).getValue());
 			}
 		});
 		HashMap sortedList = new LinkedHashMap();

@@ -39,8 +39,8 @@ public class PriorityQueueTestsForNonEmptyQueue {
 
 	/**
 	 * Test method for
-	 * {@link com.example.priorityQueue.service.PriorityQueue#enqueue(long, long)}. Testing
-	 * with random list of IDs and dateTime values generated in Excel
+	 * {@link com.example.priorityQueue.service.PriorityQueue#enqueue(long, long)}.
+	 * Testing with random list of IDs and dateTime values generated in Excel
 	 */
 	@Test
 	public void testAEnqueueWithRandomData() {
@@ -63,23 +63,24 @@ public class PriorityQueueTestsForNonEmptyQueue {
 	}
 
 	/**
-	 * Test method for {@link com.example.priorityQueue.service.PriorityQueue#getListOfID()}.
+	 * Test method for
+	 * {@link com.example.priorityQueue.service.PriorityQueue#getListOfID()}.
 	 * Testing with random list of IDs and dateTime values generated in Excel
 	 */
 	@Test
 	public void testBGetListOfIDWithForNonEmptyQueue() {
-		long[] id = { 99999999999990L, 99999999999975L, 99999999999960L, 653350848180L, 246037442775L, 990269851000L,
-				945525605414L, 916664047480L, 880479761739L, 873118299954L, 854649960063L, 850571678043L, 844701846156L,
-				843960375228L, 831692741138L, 807594113458L, 799272862638L, 789602895481L, 782040967832L, 766451628175L,
-				755582148520L, 749642342899L, 749280136861L, 739481561952L, 698032193059L, 663221318738L, 587939361520L,
-				559956616239L, 524805092682L, 504685053298L, 472149153629L, 466966510666L, 449046393991L, 447386722599L,
-				415429841945L, 409135488414L, 386412336176L, 339074639461L, 332288519112L, 317414121682L, 316799572856L,
-				308592724561L, 182886607971L, 170229718242L, 162577145453L, 125765544506L, 111358965013L, 80842806155L,
-				34588725084L, 12088759803L };
+		long[] id = { 246037442775L, 653350848180L, 99999999999960L, 99999999999975L, 99999999999990L, 916664047480L,
+				990269851000L, 587939361520L, 415429841945L, 80842806155L, 766451628175L, 755582148520L, 409135488414L,
+				873118299954L, 182886607971L, 880479761739L, 12088759803L, 739481561952L, 447386722599L, 170229718242L,
+				854649960063L, 850571678043L, 524805092682L, 799272862638L, 34588725084L, 844701846156L, 559956616239L,
+				843960375228L, 332288519112L, 698032193059L, 945525605414L, 111358965013L, 339074639461L, 504685053298L,
+				317414121682L, 782040967832L, 749280136861L, 749642342899L, 308592724561L, 807594113458L, 831692741138L,
+				789602895481L, 162577145453L, 449046393991L, 316799572856L, 125765544506L, 472149153629L, 386412336176L,
+				663221318738L, 466966510666L };
 		LinkedList<Long> expected = new LinkedList<Long>();
 		for (long l : id)
 			expected.add(l);
-		assertEquals(expected, priorityQueue.getListOfID());
+		 assertEquals(expected, priorityQueue.getListOfID());
 	}
 
 	/**
@@ -89,11 +90,12 @@ public class PriorityQueueTestsForNonEmptyQueue {
 	 */
 	@Test
 	public void testCGetPositionOfIDForNonEmptyQueue() {
-		assertEquals(5, priorityQueue.getPositionOfID(990269851000L));
+		assertEquals(6, priorityQueue.getPositionOfID(990269851000L));
 	}
 
 	/**
-	 * Test method for {@link com.example.priorityQueue.service.PriorityQueue#dequeue()}.
+	 * Test method for
+	 * {@link com.example.priorityQueue.service.PriorityQueue#dequeue()}.
 	 * Validates method execution on empty queue
 	 */
 	@Test
@@ -103,8 +105,8 @@ public class PriorityQueueTestsForNonEmptyQueue {
 
 	/**
 	 * Test method for
-	 * {@link com.example.priorityQueue.service.PriorityQueue#removeID(long)}. Validates
-	 * method execution on empty queue
+	 * {@link com.example.priorityQueue.service.PriorityQueue#removeID(long)}.
+	 * Validates method execution on empty queue
 	 */
 	@Test
 	public void testERemoveForNonEmptyQueue() {
